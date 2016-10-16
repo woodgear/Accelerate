@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.misakimei.accelerate.OptionItem
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/create"
+        app:imagesrc="@drawable/ic_add_black_48dp"
+        app:text="@string/inter_create"/>
+
+    <com.misakimei.accelerate.OptionItem
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/share"
+        app:imagesrc="@drawable/ic_share_black_48dp"
+        app:text="@string/share"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/create" />
+
+    <com.misakimei.accelerate.OptionItem
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exploer"
+        app:imagesrc="@drawable/ic_folder_open_black_48dp"
+        app:text="@string/inter_exploer"
+        android:layout_below="@+id/create"
+        android:layout_alignParentStart="true" />
+
+    <com.misakimei.accelerate.OptionItem
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        app:imagesrc="@drawable/ic_save_black_48dp"
+        app:text="@string/save"
+        android:layout_below="@+id/create"
+        android:layout_toEndOf="@+id/create" />
+
+
+</RelativeLayout>

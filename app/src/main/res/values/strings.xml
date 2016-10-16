@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Accelerate</string>
+    <string name="brush_stroke_width">粗细</string>
+    <string name="brush_alpha_degree">透明度</string>
+    <string name="shapeDeteMode">识别模式</string>
+    <string name="inter_create">新建</string>
+    <string name="inter_exploer">浏览</string>
+    <string name="option_item_text_default">工具</string>
+    <string name="save">保存</string>
+    <string name="share">分享</string>
+    <string name="isSave">是否保存?</string>
+    <string name="saveconfirm">是</string>
+    <string name="savecancle">否</string>
+    <string name="ask_name">文件名</string>
+    <string name="filenameconfirm">确定</string>
+    <string name="brush_stroke_alpha">透明度</string>
+    <string name="SVBar">亮度</string>
+
+</resources>

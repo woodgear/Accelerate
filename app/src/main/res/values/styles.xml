@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="android:Theme.Light.NoTitleBar.Fullscreen">-->
+    <!--</style>-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    
+    <style name="loadview" parent="Material.Drawable.CircularProgress">
+        <item name="cpd_strokeColor">@color/red</item>
+    </style>
+    
+    <style name="RippleDrawableStyle">
+        <item name="rd_rippleType">wave</item>
+    </style>
+</resources>

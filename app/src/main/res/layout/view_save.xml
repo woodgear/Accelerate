@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/isSave"
+    android:id="@+id/savehint"
+    android:textSize="30sp"
+    android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:layout_below="@id/savehint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveconfirm"
+            android:text="@string/saveconfirm"
+            android:layout_below="@+id/savehint"
+            android:layout_toStartOf="@+id/savecancle" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/savecancle"
+            android:text="@string/savecancle"
+            android:layout_below="@+id/savehint"
+            android:layout_alignEnd="@+id/savehint" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.misakimei.accelerate"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 0
+        versionName "0.1"
+    }
+}
+
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile 'com.github.bumptech.glide:glide:3.5.0'
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile 'com.github.rey5137:material:1.2.4'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile files('libs/MiStats_SDK_Client_1_8_0.jar')
+    compile files('libs/xiaomi_sdk.jar')
+}

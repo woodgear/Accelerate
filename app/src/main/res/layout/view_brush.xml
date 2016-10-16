@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:text="@string/brush_stroke_width"
+        android:textSize="16sp"
+        android:layout_above="@+id/brush_stroke_alpha"
+        android:layout_alignParentStart="true" />
+
+    <com.rey.material.widget.Slider
+        android:id="@+id/brush_stroke_width"
+        style="@style/Material.Widget.Slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:sl_discreteMode="true"
+        app:sl_maxValue="100"
+        app:sl_minValue="1"
+        app:sl_value="50"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:text="@string/brush_stroke_alpha"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/brush_stroke_alpha"
+        android:layout_toStartOf="@+id/brush_stroke_alpha" />
+
+    <com.rey.material.widget.Slider
+        android:id="@+id/brush_stroke_alpha"
+        style="@style/Material.Widget.Slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:sl_discreteMode="true"
+        app:sl_maxValue="255"
+        app:sl_minValue="1"
+        app:sl_value="100"
+        android:layout_below="@+id/brush_stroke_width"
+        android:layout_alignStart="@+id/brush_stroke_width" />
+
+
+    <com.misakimei.accelerate.view.PointView
+        android:id="@+id/ponitview"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+</RelativeLayout>
